@@ -32,6 +32,13 @@ with open('blur.png', 'rb') as f:
     mime = MIMEBase('image', 'png', filename='blur.png')
     mime.add_header('Content-Disposition', 'attachment', filename='blur.png')
     mime.add_header('Content-ID', '<0>')
+    mime.add_header('X-Attachment-ID', '0')
+
+    mime.set_payload(f.read())
+
+    encoders.encode_base64(mime)
+
+    msg.attach(mime)
 
 
 server = smtplib.SMTP(smtp_server, 25)
