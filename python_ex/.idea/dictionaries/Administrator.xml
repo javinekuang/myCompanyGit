@@ -3,6 +3,8 @@
     <words>
       <w>addr</w>
       <w>smtp</w>
+      <w>sqlite</w>
+      <w>tablename</w>
     </words>
   </dictionary>
 </component>
