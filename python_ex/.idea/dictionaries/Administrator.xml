@@ -2,6 +2,9 @@
   <dictionary name="Administrator">
     <words>
       <w>addr</w>
+      <w>endif</w>
+      <w>sigin</w>
+      <w>signin</w>
       <w>smtp</w>
       <w>sqlite</w>
       <w>tablename</w>
